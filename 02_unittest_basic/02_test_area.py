@@ -24,6 +24,7 @@ class TestArea(unittest.TestCase):
     def test_area_negative_value_should_raise_error(self):
         self.assertRaises(ValueError, area, -4, 5)
         self.assertRaises(ValueError, area, 4, -5)
+        self.assertRaises()
 
 if __name__ == '__main__':
     unittest.main(verbosity=2)
